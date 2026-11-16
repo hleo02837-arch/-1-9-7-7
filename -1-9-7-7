@@ -1,4 +1,4 @@
-
-pip install flask
-sudo python3 server.py
-# open http://YOUR-SERVER-IP:5000
+cd /opt/cyberking
+# put env vars AFTER sudo, not before - sudo strips them otherwise
+sudo HOST=10.0.0.1 PORT=5000 PORTAL_TOKEN=YOUR_REAL_TOKEN_HERE ./venv/bin/python3 server.py
+# expect: Portal on http://10.0.0.1:5000 token_set=True
