@@ -1,4 +1,2 @@
-cd /opt/cyberking
-# put env vars AFTER sudo, not before - sudo strips them otherwise
-sudo HOST=10.0.0.1 PORT=5000 PORTAL_TOKEN=YOUR_REAL_TOKEN_HERE ./venv/bin/python3 server.py
-# expect: Portal on http://10.0.0.1:5000 token_set=True
+sudo HOST=10.0.0.1 PORT=5000 PORTAL_TOKEN=xxx ./venv/bin/python ...
+# sudo sets them for the command it's about to run
